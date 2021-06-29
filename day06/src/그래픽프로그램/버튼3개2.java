@@ -30,12 +30,12 @@ public class 버튼3개2 {
 
 	
 	
-//		
-//		ImefeIcon car1 = new ImefeIcon("car1.png");
-//		ImefeIcon car2 = new ImefeIcon("car2.png");
-//		b.setIcon(car1);
-//		m.setIcon(car2);
-//		 		
+		
+		ImageIcon car1 = new ImageIcon("car1.png");
+		ImageIcon car2 = new ImageIcon("car2.png");
+		b.setIcon(car1);
+		m.setIcon(car2);
+		 		
 		
 		
 		
