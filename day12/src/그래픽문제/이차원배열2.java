@@ -13,6 +13,7 @@ public class 이차원배열2 {
 		arrList[1] =arr2;
 		arrList[2] =arr3;
 		//			0	1	2	3	4
+		//	       ===================
 		//0			0	0	0
 		//1			0	0	0	0	0
 		//2			0	0	0	0
@@ -26,6 +27,9 @@ public class 이차원배열2 {
 		System.out.println(arrList[2].length);
 		//2차원은 2중 for 문 으로 돌려야한다.
 		
+		//2차원배열은 1차원 배열의 합이다.
+		//3차원 장 행 열
+		//
 		
 	}
 
