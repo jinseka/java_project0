@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+	background: gray;
+	
+	/* h1에 해당하는 스타일을 괄호안에 여가지 지정
+	자동주선 ctrl +/*/
+	
+	
+}
+
+h1{
+	width: 300px;
+	height: 100px;
+	background: fuchsia;
+}
