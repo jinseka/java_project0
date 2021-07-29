@@ -18,8 +18,11 @@
 
   //DAO를 만들어서 탈퇴요청!!
   회원DAO2 dao = new 회원DAO2();
-  dao.update(bag);
-    
+  int result =dao.update(bag);
+  String text ="회원수정 실패했습니다. 재수정해주세요.";
+  if(result ==1){
+  	text ="회원수정 성공했습니다. 축하드립니다";
+  }
     
     %>
 <!DOCTYPE html>
@@ -30,5 +33,6 @@
 </head>
 <body>
 수정처리 요청
+실행 결과는 <%= text %>>
 </body>
 </html>

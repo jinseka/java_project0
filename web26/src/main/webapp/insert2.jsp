@@ -1,3 +1,4 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.If"%>
 <%@page import="shop.db.게시판DAO"%>
 <%@page import="shop.dto.게시판Bag"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -18,8 +19,12 @@
     	
     	//3. 게시판dao를 만들어서 create기능을 처리하라고 메서드 호출
     	게시판DAO dao = new 게시판DAO();
-    	dao.create(bag);
-    	
+    	int result=dao.create(bag);
+    	String text = "게시판 등록 실패";
+    	if(result ==1)
+    		{text = "게시판 등록 성공";
+    		
+    		}
     	//   2번에서 만든 가방을 입력값으로 주어야 함.
     	//게시판DAO를 게시판용으로 변경해주세요.
     	
@@ -34,5 +39,6 @@
 </head>
 <body bgcolor="pink">
 게시판 글 db에 저장하도록 sql문 전송됨.
+실행결과는 <%= text %>
 </body>
 </html>

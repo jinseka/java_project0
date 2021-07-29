@@ -18,8 +18,11 @@
     	bag.setTel(tel);
     	
     	회원DAO2 dao = new 회원DAO2();
-    	dao.create(bag);
-    			
+    	int result = dao.create(bag); // 0 이나 1 값이 들어있다.
+    	String text ="회원가입 실패했습니다. 재가입해주세요.";
+    	if(result ==1){
+    		text ="회원가입 성공했습니다. 축하드립니다";
+    	}
     	
     %>
 <!DOCTYPE html>
@@ -30,5 +33,6 @@
 </head>
 <body bgcolor="yellow">
 전송된 회원정보의 sql문을 전송함.
+실행 결과는 <%= text %>>
 </body>
 </html>
