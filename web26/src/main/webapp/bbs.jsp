@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -28,6 +29,8 @@
          ID: <input name = "id"><br>
             <button>게시판 하나 검색 처리</button>
       </form>
+      <a href="all2.jsp">게시판 모든 목록 가지고 오는 </a> <br>
+
 	</div>
 </div>
 
