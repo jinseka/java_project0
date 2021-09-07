@@ -24,7 +24,7 @@ function pay() {
 		pg : 'inicis', // version 1.1.0부터 지원.
 		pay_method : 'card',
 		merchant_uid : 'merchant_' + new Date().getTime(),
-		name : nameValue; //==document.getElementById("name").value,
+		name : nameValue, //==document.getElementById("name").value,
 		amount :moneyValue2,
 		buyer_email : 'iamport@siot.do',
 		buyer_name : '구매자이름',
@@ -42,8 +42,8 @@ function pay() {
 	} else {
 	var msg = '결제에 실패하였습니다.';
 	msg += '에러내용 : ' + rsp.error_msg;
-		console.log(msg)
-	//	alert(‎msg)
+		console.log(msg);
+	///alert(‎msg)
 		}
 	});
 }
@@ -54,11 +54,8 @@ function pay() {
 </head>
 
 <body>
-	결제금액:<input id="money"><br> 
-	주문명:<input id="name"><br>
 
 
-	<button onclick="pay()"
-		style="background-color: pink; font-size: 17px; width: 100px; height: 30px;">결제하기</button>
+	<button onclick="pay()"style="background-color: pink; font-size: 17px; width: 100px; height: 30px;">결제하기</button>
 </body>
 </html>
