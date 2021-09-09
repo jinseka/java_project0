@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="air">
+	<insert id="add" parameterType ="airVo">
+		insert into AIR values (#{ticketno}, #{ticketprice}, #{ticketst}, #{ticketsp}, #{stdate}, #{spdate}, #{shuttle}, #{people} )
+	</insert>
+
+	<select id="air2" parameterType="airVO" resultType="airVO">
+		select * from AIR where id = #{ticketno}
+	</select>
+
+	<delete id="del"></delete>
+	<update id="up"></update>
+
+</mapper>
