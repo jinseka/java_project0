@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.fly.pro2.DTO.AirDTO" alias="airVO"></typeAlias>
+	  <typeAlias alias="hotelDTO" type="com.fly.pro2.DTO.HotelDTO"/>
+   </typeAliases>
+   <mappers>
+      <mapper resource="mapper/airMapper.xml" />
+	  <mapper resource="mapper/hotelMapper.xml"/>
+   </mappers>
+   
+   
+</configuration>

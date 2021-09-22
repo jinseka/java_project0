@@ -2,12 +2,9 @@ package 자바심화;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Scanner;
-
 public class test01 {
-
 	public static void main(String[] args) {
 		HashMap<String , Integer> list = new HashMap<String, Integer>();
 		list.put("김아무개", 22);
@@ -29,7 +26,6 @@ public class test01 {
 				 for(Entry<String, Integer> elem : list.entrySet()){
 		                System.out.println("이름 : " + elem.getKey() + "  나이 : " + elem.getValue());
 				 }
-		               			
 			}else if (choice == 2) { //2. 명단 추가
 				System.out.print("추가할 파티인원 이름 입력 >> ");
 				String name = sc.next();
@@ -40,9 +36,7 @@ public class test01 {
 				int size2 = list.size(); //넣은 후에 크기 
 				if(size2 > size1) 
 					System.out.println("파티인원이 추가되었습니다.");
-			
 			}else if (choice == 3) { //3. 명단 삭제
-
 				System.out.println(list);
 				System.out.print("삭제할 이름을 쓰시오.>> ");
 				String key =sc.next();
@@ -50,7 +44,6 @@ public class test01 {
 				if(!list.containsKey(key)){
 					System.out.println("삭제가 완료되었습니다. ");
 				}
-			
 			}else if (choice ==4 ) { //참석자 평균 나이 
 				Collection<Integer> values =list.values();
 				System.out.println("참석자의 나이는"+ values);
@@ -59,12 +52,9 @@ public class test01 {
 				for(int v: values) {
 					sum += v;
 				}
-				
 				System.out.println("참석자 나이의 합은 " + sum);
 				System.out.println("참석자 나이의 평균은" +(sum/values.size())+" 입니다.");
-				
 			}
-
 		}
 
 	}//class
